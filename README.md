@@ -1,4 +1,4 @@
-# HEROVision Model (last updated: 2024-056-21)
+# HEROVision Model (last updated: 2024-06-21)
 
 This repository contains python codes related HEROVision model, which shows promise in optimizing individualized treatment between TA and SR for early-stage rHCC, complementing current clinical guidelines.The training of the model was completed on NVIDIA GeForce GTX 3090.
 - The data required to build the model **dataset.py**
@@ -31,7 +31,7 @@ This repository contains python codes related HEROVision model, which shows prom
   - The feature extraction layer, leveraging the ViT model2 to extract and integrate features within each patch; 
   -Convolutional layers, which further integrate features extracted from patches using various partitioning methods; 
   - The Cox regression layer, utilizing the COX loss function to regress the extracted features and ultimately derive the corresponding risk value.
-
+![Architecture](https://github.com/Rujinyu/HEROVision/blob/main/MODEL.jpg "Architecture")
 
 **Hyperparameters**: During the training phase, we resized the images to 128 * 128 dimensions. We employed two stages with depths of 4 and 2, heads of 2 and 4, and dimensions of 4 and 8, respectively. The Cox loss function was selected. We utilized the Adam optimizer with a learning rate of 0.001 and a decay rate of 0.0001. Training was conducted over 100 epochs with a batch size of 16.
 
