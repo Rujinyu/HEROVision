@@ -28,8 +28,8 @@ This repository contains python codes related HEROVision model, which shows prom
 
 **Architecture**: This architecture comprises four main components: 
   - The embedding layer, responsible for partitioning the original image into patches using diverse techniques; 
-  - The feature extraction layer, leveraging the ViT model2 to extract and integrate features within each patch; 
-  -Convolutional layers, which further integrate features extracted from patches using various partitioning methods; 
+  - The feature extraction layer, leveraging the ViT model to extract and integrate features within each patch; 
+  - Convolutional layers, which further integrate features extracted from patches using various partitioning methods; 
   - The Cox regression layer, utilizing the COX loss function to regress the extracted features and ultimately derive the corresponding risk value.
 ![Architecture](https://github.com/Rujinyu/HEROVision/blob/main/MODEL.jpg "Architecture")
 
